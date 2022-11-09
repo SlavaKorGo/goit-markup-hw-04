@@ -263,7 +263,7 @@ icon-antenna {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-top: 16px;
 }
 .social-item {
   width: 44px;
@@ -301,7 +301,7 @@ icon-antenna {
 }
 .our-team {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 .title-team {
   font-size: 36px;
@@ -335,6 +335,7 @@ icon-antenna {
   color: #afb1b8;
   gap: 10px;
   margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .work-footer {
   font-weight: 700;
@@ -420,6 +421,7 @@ icon-antenna {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 .button-portfolio:focus,
 .button-portfolio:hover {
@@ -462,6 +464,9 @@ icon-antenna {
   color: var(--accent-color);
 }
 /*portfolio*/
+.link-portfolio {
+  display: block;
+}
 .portfolio-description {
   border: 1px solid #eeeeee;
   border-top: 0;
@@ -482,8 +487,8 @@ icon-antenna {
   display: flex;
   gap: 30px;
 }
-.portfolio-list .portfolio-projekts:hover,
-.portfolio-list .portfolio-projekts:focus {
+.link-portfolio:hover,
+.link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -518,10 +523,13 @@ icon-antenna {
   border-radius: 4px;
 }
 .customers-icon {
-  fill: var(---primary-text-color);
+  fill: #afb1b8;
 }
-.customers-icon:hover {
+.customers-link:hover .customers-icon {
   fill: var(--accent-color);
+}
+.customers:hover {
+  border-color: #2196f3;
 }
 .list-customers {
   display: flex;

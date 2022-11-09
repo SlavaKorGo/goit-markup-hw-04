@@ -68,6 +68,14 @@ a {
   color: #000000;
 }
 /* nav */
+.mail-tel:hover {
+  fill: var(--accent-color);
+}
+
+.link-icon-mail {
+  display: flex;
+}
+
 .list-nav {
   margin: 0;
   display: flex;
@@ -79,12 +87,14 @@ a {
 }
 
 /* header */
-.list-mail {
-  margin-right: 10px;
-  fill: var(---primary-text-color);
+.tel,
+.mail {
+  display: flex;
+  align-items: center;
 }
-.icon-mail:hover {
-  fill: var(--accent-color);
+.icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .list-mail-tel {
@@ -231,11 +241,15 @@ icon-antenna {
   gap: 30px;
 }
 /*4 sektion */
-.social-icon {
-  fill: var(---primary-text-color);
+.team-people .team-people-list {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.social-icon:hover {
-  fill: #ffffff;
+.social-icon {
+  fill: #afb1b8;
+}
+.social-link:hover .social-icon {
+  fill: var(--ptimary-white-color);
 }
 .social-link {
   width: 100%;
@@ -270,6 +284,7 @@ icon-antenna {
 }
 .section-team {
   background-color: #f5f4fa;
+  text-align: center;
 }
 .team-people {
   display: flex;
@@ -311,6 +326,31 @@ icon-antenna {
   color: var(---primary-text-color);
 }
 /*footer*/
+.social-item-footer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  color: #afb1b8;
+  gap: 10px;
+  margin-right: 10px;
+}
+.work-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-contacts-social {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
 .footer-icons {
   text-align: center;
 
@@ -385,6 +425,8 @@ icon-antenna {
 .button-portfolio:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*first section*/
 .projekts {
@@ -440,6 +482,11 @@ icon-antenna {
   display: flex;
   gap: 30px;
 }
+.portfolio-list .portfolio-projekts:hover,
+.portfolio-list .portfolio-projekts:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-projekts {
   background-color: #ffffff;
 
@@ -455,6 +502,13 @@ icon-antenna {
   background-color: #f5f4fa;
 }
 /*Наші клієнти*/
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .customers {
   width: 170px;
   height: 92px;
@@ -464,7 +518,6 @@ icon-antenna {
   border-radius: 4px;
 }
 .customers-icon {
-  margin-top: 16px;
   fill: var(---primary-text-color);
 }
 .customers-icon:hover {
@@ -481,4 +534,7 @@ icon-antenna {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+.link-social {
+  fill: var(--primary-white-color);
 }
